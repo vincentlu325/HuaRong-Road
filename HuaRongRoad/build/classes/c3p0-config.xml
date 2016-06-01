@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c3p0-config>
+	<default-config>
+		<property name="driverClass">com.mysql.jdbc.Driver</property>
+		<property name="jdbcUrl">jdbc:mysql:///db_hrr?characterEncoding=utf8
+		</property>
+		<property name="user">root</property>
+		<property name="password"></property>
+
+		<property name="maxPoolSize">1000</property>
+		<property name="minPoolSize">50</property>
+		<property name="initialPoolSize">60</property>
+		<property name="maxIdleTime">10</property>
+		<property name="checkoutTimeout">3000</property>
+
+		<property name="acquireIncrement">20</property>
+
+		<property name="acquireRetryAttempts">30</property>
+
+		<property name="acquireRetryDelay">1000</property>
+
+		<property name="autoCommitOnClose">false</property>
+
+		<property name="automaticTestTable">Test</property>
+
+		<property name="breakAfterAcquireFailure">false</property>
+
+		<property name="idleConnectionTestPeriod">60</property>
+
+	</default-config>
+</c3p0-config>
